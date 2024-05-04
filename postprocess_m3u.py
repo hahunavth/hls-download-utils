@@ -22,16 +22,14 @@ def add_https_to_m3u(m3u_file):
         file.writelines(modified_lines)
 
 
-# Path to the CSV file containing the URLs
 csv_file = "urls.txt"
 
 output_m3u_dir = "m3u_files"
 os.makedirs(output_m3u_dir, exist_ok=True)
 
-# Open the CSV file and read its contents
 with open(csv_file, 'r') as file:
     reader = csv.reader(file)
-    next(reader)  # Skip the header row if it exists
+    next(reader)
     for row in reader:
         name, url = row
         url = url.replace("https://linkads.xyz/www.phimmoivl.net/ads2video/embed.html?link=https://www.phimmoivl.net/jwplayer?source=",
@@ -39,7 +37,10 @@ with open(csv_file, 'r') as file:
         filename = f"{name}.m3u"
         fpath = os.path.join(output_m3u_dir, filename)
         print(f"Downloading {filename} from {url}")
-        download_m3u(url, fpath)
-        add_https_to_m3u(fpath)
+        if not os.path.exists(fpath):
+            download_m3u(url, fpath)
+            add_https_to_m3u(fpath)
+        else:
+            print(f"{filename} already exists. Skipping download.")
 
 print("Download complete.")
