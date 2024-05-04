@@ -1,4 +1,3 @@
-name,url
 CTNH_TAP_40,https://linkads.xyz/www.phimmoivl.net/ads2video/embed.html?link=https://www.phimmoivl.net/jwplayer?source=https%3A%2F%2Fhls.streamcdn.xyz%2Fm3u8%2Fc8bd54ca-e68c-5ebf-9af4-e03cec8d04ef&id=&type=hls
 CTNH_TAP_41,https://linkads.xyz/www.phimmoivl.net/ads2video/embed.html?link=https://www.phimmoivl.net/jwplayer?source=https%3A%2F%2Fhls.streamcdn.xyz%2Fm3u8%2F17808d40-0868-5e97-9b5d-e4e846393439&id=&type=hls
 CTNH_TAP_42,https://linkads.xyz/www.phimmoivl.net/ads2video/embed.html?link=https://www.phimmoivl.net/jwplayer?source=https%3A%2F%2Fhls.streamcdn.xyz%2Fm3u8%2Fa7da6bc3-f05e-5c8f-9616-b7145af2b385&id=&type=hls
